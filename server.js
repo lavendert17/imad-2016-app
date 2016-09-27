@@ -21,13 +21,42 @@ app.use(morgan('combined'));
             }
             
     var htmlTemplate = {
-        
-        
-        
-        
-        
-        
-        
+  <html>
+  <head>
+      <title>
+        Article One : Lavender 17
+      </title>
+         <meta name= "viewport" content="width-device-width, initial scale=1" />
+         <link href="/ui/style.css" rel="stylesheet" />
+ </head>
+    <body>
+        <div class= "container">
+           <div>
+            <a href= '/'> Home </a>
+            
+        </div>
+        <hr/>
+            <h3>
+                 Artice one
+            
+            </h3>
+                <div>  
+                    Sept 5, 2016
+                </div>
+                    <div>
+                        <p>
+                            This is the content for my first article.  This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.      
+                        </p>
+                        <p>
+                            This is the content for my first article.  This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.      
+                        </p>
+                        <p>
+                            This is the content for my first article.  This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.      
+                        </p>
+                    </div>
+                        </div>
+    </body>
+</html>
     }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
