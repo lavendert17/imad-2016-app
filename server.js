@@ -34,6 +34,14 @@ app.use(morgan('combined'));
                             This is the content for my second article.   
             };
                 
+                ArticleThree : {
+                
+         heading: 'Article Three
+         content: 
+        
+                        `<p>
+                            This is the content for my third article.   
+            };
                 
                 
                 
