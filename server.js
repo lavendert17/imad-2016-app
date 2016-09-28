@@ -4,9 +4,14 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-    var ArticleOne = {
-        title: 'Article One| lavender17',
-        heading: 'Article One',
+    
+    
+    var Articles =  { 
+       ArticleOne : { 
+       ArticleThree : {}
+    };
+        title: 'Article One| lavender17';
+        heading: 'Article One| lavender17';
         content: 
         
                         `<p>
@@ -20,6 +25,19 @@ app.use(morgan('combined'));
                         </p>`
             };
             
+            ArticleTwo : {
+                
+         heading: 'Article Two| lavender17',
+         content: 
+        
+                        `<p>
+                            This is the content for my first article.   
+            };
+                
+                
+                
+                
+                
     function createTemplate (data)  {
         var title = data.title;
         var heading = data.heading;
