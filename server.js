@@ -10,7 +10,7 @@ app.use(morgan('combined'));
        ArticleOne : { 
        ArticleThree : {}
     };
-        title: 'Article One| lavender17';
+        title: 'Article one| lavender17';
         heading: 'Article One| lavender17';
         content: 
         
