@@ -4,11 +4,10 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
 var content {
-  title:'Article One | Sonia T';
-  heading: 'Article one';
-  date: 'Sep 5, 2016';
+  title;'Article one | Sonia T',
+  heading; 'Article one',
+  date; 'Sep 5, 2016',
 };
 
 app.get('/', function (req, res) {
