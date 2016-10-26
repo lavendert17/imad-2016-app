@@ -9,7 +9,15 @@ button.onclick = function(){
   // Capture the response and store it in a variable
   
   requestonreadystatechange = function() {
-    if(request.readyState)  
+    if(request.readyState) === XMLHttpRequest.DONE) {
+        // Take some action
+        
+        if (request.Status === 200) {
+            
+        }
+    }
+    
+       // Not done yet
       
   };
   //Render the variable in the correct span
