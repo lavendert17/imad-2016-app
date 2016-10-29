@@ -2,8 +2,6 @@
 
 var button = document.getElementById('counter');
 
-
-
 button.onclick = function(){
     
   //Create a request object
@@ -23,6 +21,9 @@ button.onclick = function(){
     }
     
        // Not done yet
+       request.open('GET', 'http://lavendert17.imad.hasura-app.io/counter', true);
+       request.send(null);
+       
       
   };
   
