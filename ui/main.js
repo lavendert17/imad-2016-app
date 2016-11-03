@@ -3,7 +3,12 @@
 var button = document.getElementById('counter');
 
 button.onclick = function(){
+
     
+//Submit name
+
+    var submit = document.getElementById('submit_btn');
+    submit.onclick = function () {
   //Create a request object
   var request = new XMLHttpRequest();
   
@@ -37,14 +42,10 @@ button.onclick = function(){
   
 };
 
-//Submit name
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
-var submit = document.getElementById('submit_btn');
-submit.onclick = function () {
-  //Make a request to the server and send the name
+ //Make a request to the server and send the name
   
-  //capture a list of names and render it as list.
+
+//capture a list of names and render it as list.
   
   var names = ['name1', 'name2', 'name3', 'name4'];
   var list = '';
@@ -55,4 +56,7 @@ submit.onclick = function () {
   ul.innerHTML = list;
   
   };
-  
+var nameInput = document.getElementById('name');
+var name = nameInput.value;     
+ 
+
