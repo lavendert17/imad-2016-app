@@ -28,7 +28,7 @@ button.onclick = function(){
     }
        // Not done yet
        
-      };
+ };
       
       //Make the request
       request.open('GET', 'http://lavendert17.imad.hasura-app.io/counter', true);
