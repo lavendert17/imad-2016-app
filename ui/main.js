@@ -10,13 +10,11 @@ button.onclick = function(){
      var submit = document.getElementById('submit_btn');
      submit.onclick = function () {
  
-//Create a request object
-
+     //Create a request object
      var request = new XMLHttpRequest();
   
-// Capture the response and store it in a variable
-  
-     request.onreadystatechange = function() {
+     // Capture the response and store it in a variable
+    request.onreadystatechange = function() {
       if(request.readyState === XMLHttpRequest.DONE) {
     
 // Take some action
