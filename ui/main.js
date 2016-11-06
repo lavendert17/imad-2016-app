@@ -6,6 +6,11 @@ var element = document.getElementById('main-text'
 
 element.innerHTML = 'NEW VALUE';
 
+//MOVE THE IMAGE
+var img = document.getElementById('img');
+img.onclick = function () {
+    
+};
 
 
 
