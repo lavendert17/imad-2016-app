@@ -20,9 +20,9 @@ body {
 }
 
  .container {
-   max-width: 800px;
-   margin: 0 auto;
-  color: #8c5f5f;
- padding-left: 20px;
- padding-right: 20px;
-            }            
+    max-width: 800px;
+    margin: 0 auto;
+    color: #8c5f5f;
+    padding-left: 20px;
+    padding-right: 20px;
+    }            
