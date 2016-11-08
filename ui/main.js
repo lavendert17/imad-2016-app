@@ -28,7 +28,6 @@ button.onclick = function () {
 };
     
         
-    
 //Submit name
 
      var submit = document.getElementById('submit_btn');
