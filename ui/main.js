@@ -26,20 +26,17 @@ button.onclick = function () {
         request.open('GET', 'http://lavendert17.imad.hasura-app.io/submit-name?name=' + name, true);
         request.send(null);
 };
+
 //Submit name
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
 
     // Create a request object
     var request = new XMLHttpRequest();
-    
-    
-}
-// Capture the response and store in it a variable
-request.onreadystatechange = function () {
-if (request.readyState === XMLHttpRequest.DONE) {
+};
+   // Capture the response and store in it a variable
+     request.onreadystatechange = function () {
+     if (request.readyState === XMLHttpRequest.DONE) {
     // tAKE SOME ACTION
     if (request.status === 200) {
        // Capture a list of names and render it as a list
@@ -52,14 +49,17 @@ if (request.readyState === XMLHttpRequest.DONE) {
         
         var ul = document.getElementById('namelist');
         ul.innerHTML = list;
+    }
+}
+      //Not done yet
+    
  };
-           //Make a request to the server and send the name
-            var nameInput = document.getElementById('name');
-            var name = nameInput.value;     
-            request.open('GET', 'http://lavendert17.imad.hasura-app.io/submit-name?name=' + name, true);
-            request.send(null);
+    //Make a request to the server and send the name
+    var nameInput = document.getElementById('name');
+    var name = nameInput.value;     
+    request.open('GET', 'http://lavendert17.imad.hasura-app.io/submit-name?name=' + name, true);
+    request.send(null);
       
-  
 };
 
      
