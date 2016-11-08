@@ -9,7 +9,12 @@ element.innerHTML = 'NEW VALUE';
 //MOVE THE IMAGE
 var img = document.getElementById('madi');
 img.onclick = function () {
-    var interval = setInterval(moveLeft, 100)
+    function moveRight () {
+        marginLeft = marginLeft + 10;
+        img.style.marginLeft = marginLeft + 'px';
+        
+    }
+    var interval = setInterval(moveRight, 100);
     img.style.marginLeft = '100px';
 };
 
