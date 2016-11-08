@@ -88,8 +88,14 @@ function createtemplate (data) {
         `;
         return htmlTemplate;
 }
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/test-db', function(req,res) {
+  // Make a select request  
+  // Return a response with the results
 });
 
 var counter = 0;
