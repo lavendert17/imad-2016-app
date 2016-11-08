@@ -1,14 +1,13 @@
 //counter code
 
 var button = document.getElementById('counter');
-var counter = 0;
 button.onclick = function () {
 
-       // Make a request to the counter endpoint
+       // Create a request
        var request = new XMLHttpRequest();
        
        // Capture the response and store it in a variable
-       request onreadystatechange = function () {
+       request.onreadystatechange = function () {
        if (request.readyState === XMLHttpRequest.DONE) {
           // tAKE SOME ACTION
         if (request.status === 200) {
@@ -17,18 +16,18 @@ button.onclick = function () {
              span.innerHTML = counter.toString();
             
         }
-       }
+    }
        
        // Not done yet
-};
+    };
        
+       //Make the request
+    
+        request.open('GET', 'http://lavendert17.imad.hasura-app.io/submit-name?name=' + name, true);
+        request.send(null);
 };
     
-        //Make the request
-    
-            request.open('GET', 'http://lavendert17.imad.hasura-app.io/submit-name?name=' + name, true);
-            request.send(null);
-
+        
     
 //Submit name
 
