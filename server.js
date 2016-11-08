@@ -68,7 +68,7 @@ function createtemplate (data){
                      <hr/>
                      <h3>Professional</h3>
                    <div>
-                    Finally found it here!
+                    I am into Digital Marketing
                    </div>
                     <hr/>
                    <div class="footer">
@@ -117,9 +117,9 @@ app.get('/ui/madi/png', function (req, res) {
 });
 
 var names = [];
-app.get('/submit-name/:name', function(req,res) {
+app.get('/submit-name', function(req,res) { // URL: /submit-name?name=xxxxx
     //Get the name from the request object
-var name; //1000
+var name = req.query.name;
 
 names.push(name);
 //JSON : Javascript Object Notation
